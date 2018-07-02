@@ -25,7 +25,8 @@ RUN set -ex \
         && pip3 install efb-telegram-master \
         && pip3 install efb-wechat-slave \
 
-RUN pip3 install pyqrcode \
+RUN pip3 install --upgrade pip \
+    pip3 install pyqrcode \
     pip3 install --upgrade git+https://github.com/littlecodersh/ItChat.git
 
 CMD ["ehforwarderbot"]
