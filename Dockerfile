@@ -16,7 +16,8 @@ RUN set -ex \
                 git \
                 py3-yaml \
                 py3-requests \
-                gcc
+                gcc 
+               
 
 RUN set -ex \
         && pip3 install --upgrade pip \
@@ -24,6 +25,7 @@ RUN set -ex \
         && pip3 install efb-telegram-master \
         && pip3 install efb-wechat-slave \
 
-RUN pip3 install --upgrade git+https://github.com/littlecodersh/ItChat.git
+RUN pip3 install pyqrcode \
+    pip3 install --upgrade git+https://github.com/littlecodersh/ItChat.git
 
 CMD ["ehforwarderbot"]
