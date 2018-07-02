@@ -13,6 +13,7 @@ RUN set -ex \
                 py3-numpy \
                 py3-pillow \
                 libwebp \
+                git \
                 py3-yaml \
                 py3-requests \
                 gcc
