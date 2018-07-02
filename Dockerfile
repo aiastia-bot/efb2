@@ -1,5 +1,5 @@
 FROM alpine:edge
-MAINTAINER Scavin <scavin@appinn.com>
+
 
 ENV LANG C.UTF-8
 
