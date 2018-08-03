@@ -1,0 +1,22 @@
+token: "bot key"
+admins: 
+- 用户id
+ 
+# API tokens required for speech recognition
+speech_api:
+    # Microsoft (Bing) speech recognition token
+    # API key can be obtained from
+    # https://azure.microsoft.com/en-us/try/cognitive-services/
+    bing: "VOICE_RECOGNITION_TOKEN"
+    # Baidu speech recognition token
+    # API key can be obtained from
+    # http://yuyin.baidu.com/
+    baidu:
+        app_id: 11177225
+        api_key: "test"
+        secret_key: "123456"
+        
+flags:
+    option_one: 10
+    option_two: false
+    option_three: "foobar"
