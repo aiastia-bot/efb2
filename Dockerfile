@@ -3,9 +3,7 @@ FROM alpine:edge
 
 ENV LANG C.UTF-8
 
-RUN apk add --update --no-cache ca-certificates
-
-RUN set -ex \
+RUN    apk add --update --no-cache ca-certificates  \
         && apk add --no-cache --virtual .run-deps \
                 ffmpeg \
                 libmagic \
