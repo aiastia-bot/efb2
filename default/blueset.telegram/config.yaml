@@ -1,6 +1,6 @@
-token: "bot key"
+token: "botkey"
 admins: 
-- 用户id
+- id
  
 # API tokens required for speech recognition
 speech_api:
@@ -12,9 +12,9 @@ speech_api:
     # API key can be obtained from
     # http://yuyin.baidu.com/
     baidu:
-        app_id: 11177225
-        api_key: "test"
-        secret_key: "123456"
+        app_id: APPID
+        api_key: "APIKEY"
+        secret_key: "SECRETKEY"
         
 flags:
     option_one: 10
