@@ -26,7 +26,7 @@ RUN \
     automake \
     libtool \
     python-setuptools \
-    python-pip 
+    python3-pip 
                 
                
 
