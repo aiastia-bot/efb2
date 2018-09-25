@@ -14,9 +14,8 @@ RUN apt-get update \
        ffmpeg \
        libmagic-dev \
        libwebp-dev         
-        
-RUN pip3 install --upgrade pip \
-        && pip3 install \
+   && pip3 install --upgrade pip \
+   && pip3 install \
             pillow \
             pyqrcode               
 
