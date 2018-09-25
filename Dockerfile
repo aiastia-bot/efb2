@@ -15,9 +15,11 @@ RUN apt-get update \
        libmagic-dev \
        libwebp-dev         
         
-RUN   pip install --upgrade pip \
-        && pip install pillow \
-        && pip install pyqrcode               
+RUN easy_install pip \  
+       && pip install --upgrade pip \
+        && pip install \
+            pillow \
+            pyqrcode               
 
 RUN   pip install ehforwarderbot \
         && pip install efb-telegram-master \
