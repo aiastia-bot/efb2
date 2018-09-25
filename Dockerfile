@@ -4,19 +4,11 @@ FROM alpine:edge
 ENV LANG C.UTF-8
 
 RUN    apk add --update --no-cache ca-certificates  \
-        && apk add --no-cache --virtual .run-deps \
-                ffmpeg \
-                libmagic \
-                libwebp \
-                python3 \
-                py3-numpy \
-                py3-pillow \
-                libwebp \
-                git \
-                py3-yaml \
-                py3-requests \
-                gcc \
-                python3-dev 
+        && apk --update add tzdata ca-certificates \
+       ffmpeg libmagic python3 \
+       tiff libwebp freetype lcms2 openjpeg py3-olefile openblas \ 
+       && apk add --no-cache --virtual .build-deps build-base gcc python3-dev zlib-dev jpeg-dev libwebp-dev \
+       && pip3 install numpy pillow pysocks  \
                 
                
 
