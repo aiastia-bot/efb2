@@ -3,7 +3,8 @@ FROM ubuntu:latest
 
 ENV LANG C.UTF-8
 
-RUN   apt-get -y install python3 \
+RUN  apt-get update -y \ 
+      && apt-get -y install python3 \
       && apt-get -y install python3-pip  \
       && apt-get -y install python3-pil   \
       && apt-get -y install python3-numpy   \
