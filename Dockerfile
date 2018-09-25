@@ -16,14 +16,13 @@ RUN apt-get update && \
         libwebp-dev            
 
 RUN set -ex \
-        && pip3 install --upgrade pip \
-        && pip3 install pillow \
-        && pip3 install pyqrcode \
-        && pip3 install ehforwarderbot \
-        && pip3 install efb-telegram-master \
-        && pip3 install efb-wechat-slave \
-        && pip3 install git+https://github.com/blueset/ehforwarderbot.git \
-
-        && pip3 install --upgrade git+https://github.com/littlecodersh/ItChat.git
+        && pip install --upgrade pip \
+        && pip install pillow \
+        && pip install pyqrcode \
+        && pip install ehforwarderbot \
+        && pip install efb-telegram-master \
+        && pip install efb-wechat-slave \
+        && pip install git+https://github.com/blueset/ehforwarderbot.git \
+        && pip install --upgrade git+https://github.com/littlecodersh/ItChat.git
 
 CMD ["ehforwarderbot"]
