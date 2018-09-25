@@ -1,32 +1,12 @@
-FROM alpine:edge
+FROM ubuntu:latest
 
 
 ENV LANG C.UTF-8
 
-RUN \
-  apk update && \
-  apk upgrade && \
-  apk add --update --no-cache git \
-    python3 \
-    python3.6-gdbm \
-    python3-pip \
-    libtiff5-dev \
-    libjpeg8-dev \
-    zlib1g-dev \
-    libfreetype6-dev \
-    liblcms2-dev \
-    libwebp-dev \
-    tcl8.5-dev \
-    tk8.5-dev \
-    libmagic-dev \
-    ffmpeg \
-    gcc \
-    make \
-    autoconf \
-    automake \
-    libtool \
-    python-setuptools \
-    python3-pip 
+RUN sudo apt update \
+sudo  apt-get -y install python3 python3-pip python3-pil python3-numpy python3-yaml python3-requests ffmpeg libmagic-dev libwebp-dev vim screen
+
+
                 
                
 
