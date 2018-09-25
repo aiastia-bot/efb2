@@ -6,22 +6,7 @@ ENV LANG C.UTF-8
 RUN \
   apk update && \
   apk upgrade && \
-  apk add --update --no-cache \
-    bash \
-    curl \
-    dcron \
-    dropbear \
-    iproute2 \
-    logrotate \
-    openrc \
-    openssh-client \
-    openssh-sftp-server \
-    openssl \
-    procps \
-    rsyslog \
-    tzdata \
-    xz \
-    git \
+  apk add --update --no-cache git \
     python3 \
     python3.6-gdbm \
     python3-pip \
