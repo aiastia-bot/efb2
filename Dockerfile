@@ -15,8 +15,7 @@ RUN apt-get update \
        libmagic-dev \
        libwebp-dev         
         
-RUN easy_install pip3 \  
-       && pip3 install --upgrade pip \
+RUN pip3 install --upgrade pip \
         && pip3 install \
             pillow \
             pyqrcode               
