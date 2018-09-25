@@ -13,13 +13,13 @@ RUN apt-get update && \
         python3-requests \
         ffmpeg \
         libmagic-dev \
-        libwebp-dev            
-
-RUN set -ex \
-        && pip install --upgrade pip \
+        libwebp-dev         
+        
+RUN   pip install --upgrade pip \
         && pip install pillow \
-        && pip install pyqrcode \
-        && pip install ehforwarderbot \
+        && pip install pyqrcode               
+
+RUN   pip install ehforwarderbot \
         && pip install efb-telegram-master \
         && pip install efb-wechat-slave \
         && pip install git+https://github.com/blueset/ehforwarderbot.git \
