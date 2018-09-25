@@ -3,8 +3,7 @@ FROM ubuntu:latest
 
 ENV LANG C.UTF-8
 
-RUN sudo apt update \
-&& sudo  apt-get -y install python3 python3-pip python3-pil python3-numpy python3-yaml python3-requests ffmpeg libmagic-dev libwebp-dev vim screen
+RUN   apt-get -y install python3 python3-pip python3-pil python3-numpy python3-yaml python3-requests ffmpeg libmagic-dev libwebp-dev vim screen
 
 
                 
