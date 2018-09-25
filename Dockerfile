@@ -6,14 +6,14 @@ ENV LANG C.UTF-8
 RUN apt-get update && \
     apt-get install -y \
         python3 \
-        python3-pip  \
-        python3-pil   \
-        python3-numpy   \
-        python3-yaml   \
-        python3-requests   \
-        install ffmpeg   \
-        install libmagic-dev   \
-        install libwebp-dev              
+        python3-pip \
+        python3-pil \
+        python3-numpy \
+        python3-yaml \
+        python3-requests \
+        ffmpeg \
+        libmagic-dev \
+        libwebp-dev            
 
 RUN set -ex \
         && pip3 install --upgrade pip \
