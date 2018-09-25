@@ -19,6 +19,7 @@ RUN    apk add --update --no-cache ca-certificates  \
 
 RUN set -ex \
         && pip3 install --upgrade pip \
+        && pip3 install cffi \
         && pip3 install git+https://github.com/blueset/ehforwarderbot.git \
         && pip3 install git+https://github.com/blueset/efb-telegram-master.git \
         && pip3 install git+https://github.com/blueset/efb-wechat-slave.git \
