@@ -20,8 +20,8 @@ RUN apt-get update \
         
 RUN pip3 install --upgrade pip \
         && pip3 install \
-            pillow \
-            pyqrcode               
+        && pillow \
+        && pyqrcode               
 
 RUN   pip3 install ehforwarderbot \
         && pip3 install efb-telegram-master \
