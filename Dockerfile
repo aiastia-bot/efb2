@@ -16,7 +16,13 @@ RUN apt-get update \
        python-setuptools \
        python-dev \
        build-essential \
-       libwebp-dev         
+       libwebp-dev    
+       
+       
+RUN python –version \
+    && python3 –version
+
+       
         
 RUN pip3 install --upgrade pip \
         && pip3 install pillow \
