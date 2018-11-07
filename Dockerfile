@@ -7,6 +7,8 @@ RUN    apk add --update --no-cache ca-certificates  \
         && apk add --no-cache --virtual .run-deps \
                 ffmpeg \
                 libmagic \
+                libffi6 \
+                libffi-dev \
                 python3 \
                 py3-numpy \
                 py3-pillow \
@@ -16,6 +18,7 @@ RUN    apk add --update --no-cache ca-certificates  \
                 py3-requests \
                 gcc \
                 python-dev
+              
 
 
 RUN set -ex \
