@@ -1,5 +1,4 @@
-FROM ubuntu:latest
-
+FROM ubuntu:18.10
 
 ENV LANG C.UTF-8
 
@@ -16,13 +15,7 @@ RUN apt-get update \
        python-setuptools \
        python-dev \
        build-essential \
-       libwebp-dev    
-       
-       
-RUN python –version \
-    && python3 –version
-
-       
+       libwebp-dev           
         
 RUN pip3 install --upgrade pip \
         && pip3 install pillow \
