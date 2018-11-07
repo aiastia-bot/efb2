@@ -4,8 +4,7 @@ FROM alpine:edge
 ENV LANG C.UTF-8
 
 RUN    apk add --update --no-cache ca-certificates  \
-        && apk add --no-cache --virtual .run-deps \
-                ffmpeg \
+        && apk add ffmpeg \
                 libmagic \
                 libffi6 \
                 libffi-dev \
