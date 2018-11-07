@@ -14,8 +14,9 @@ RUN    apk add --update --no-cache ca-certificates  \
                 git \
                 py3-yaml \
                 py3-requests \
-                gcc 
-               
+                gcc \
+                python-dev
+
 
 RUN set -ex \
         && pip3 install --upgrade pip \
