@@ -2,8 +2,7 @@ FROM alpine:latest
 
 ENV LANG C.UTF-8
 
-RUN apk update && \
-  apk add --update --no-cache \
+RUN apk add --update --no-cache \
     python3 \
     python3-dev \
     dcron \
