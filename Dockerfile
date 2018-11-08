@@ -31,6 +31,7 @@ RUN \
     libffi-dev \
     openssl-dev
 
+RUN  pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave
 
 RUN set -ex \
         && pip3 install --upgrade pip \
