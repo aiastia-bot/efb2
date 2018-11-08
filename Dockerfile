@@ -2,11 +2,11 @@ FROM alpine:edge
 
 ENV LANG C.UTF-8
 
-RUN \
-  apk update && \
+RUN apk update && \
   apk upgrade && \
-  apk add python3 python3-dev && \
   apk add --update --no-cache \
+    python3 \
+    python3-dev \
     bash \
     curl \
     dcron \
