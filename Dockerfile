@@ -1,24 +1,26 @@
 FROM alpine:edge
 
-
 ENV LANG C.UTF-8
 
-RUN    apk add --update --no-cache ca-certificates  \
-        && apk add ffmpeg \
-                libmagic \
-                libffi6 \
-                libffi-dev \
-                python3 \
-                py3-numpy \
-                py3-pillow \
-                libwebp \
-                git \
-                py3-yaml \
-                py3-requests \
-                gcc \
-                python-dev
-              
-
+RUN \
+  apk update && \
+  apk upgrade && \
+  apk add python3 python3-dev && \
+  apk add --update --no-cache \
+    bash \
+    curl \
+    dcron \
+    dropbear \
+    iproute2 \
+    logrotate \
+    openrc \
+    openssh-client \
+    openssh-sftp-server \
+    openssl \
+    procps \
+    rsyslog \
+    tzdata \
+  rm -rf /var/cache/apk/* 
 
 RUN set -ex \
         && pip3 install --upgrade pip \
