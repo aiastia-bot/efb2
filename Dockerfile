@@ -26,7 +26,7 @@ RUN \
     ffmpeg \
     libmagic \
     libwebp \
-  rm -rf /var/cache/apk/* 
+    rm -rf /var/cache/apk/* 
 
 RUN set -ex \
         && pip3 install --upgrade pip \
