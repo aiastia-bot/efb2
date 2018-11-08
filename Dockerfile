@@ -26,8 +26,6 @@ RUN \
     rsyslog \
     tzdata \
     gcc \
-    python3 \
-    python3-dev \
     py3-numpy \
     py3-yaml \
     py3-pillow \
