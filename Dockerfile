@@ -26,7 +26,9 @@ RUN \
     ffmpeg \
     libmagic \
     libwebp \
-    rm -rf /var/cache/apk/* 
+    libffi-dev \
+    openssl-dev
+    
 
 RUN set -ex \
         && pip3 install --upgrade pip \
