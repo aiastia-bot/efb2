@@ -34,8 +34,7 @@ RUN \
 
 RUN  pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave
 
-RUN set -ex \
-        && pip3 install --upgrade pip \
+RUN    pip3 install --upgrade pip \
         && pip3 install ehforwarderbot \
         && pip3 install efb-telegram-master \
         && pip3 install efb-wechat-slave \
