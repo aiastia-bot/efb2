@@ -1,14 +1,11 @@
-FROM alpine:edge
+FROM alpine:latest
 
 ENV LANG C.UTF-8
 
 RUN apk update && \
-  apk upgrade && \
   apk add --update --no-cache \
     python3 \
     python3-dev \
-    bash \
-    curl \
     dcron \
     dropbear \
     iproute2 \
