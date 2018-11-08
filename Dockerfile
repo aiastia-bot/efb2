@@ -34,7 +34,8 @@ RUN \
     libmagic \
     libwebp \
     libffi-dev \
-    openssl-dev
+    openssl-dev \
+    git
 
 RUN  pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave
 
