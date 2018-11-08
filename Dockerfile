@@ -20,6 +20,12 @@ RUN \
     procps \
     rsyslog \
     tzdata \
+    numpy \
+    yaml \
+    pillow \
+    ffmpeg \
+    libmagic \
+    libwebp \
   rm -rf /var/cache/apk/* 
 
 RUN set -ex \
