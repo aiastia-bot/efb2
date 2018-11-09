@@ -13,7 +13,6 @@ RUN \
   apk upgrade && \
   apk add --update --no-cache \
     bash \
-    curl \
     dcron \
     dropbear \
     iproute2 \
