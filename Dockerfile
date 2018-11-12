@@ -2,7 +2,11 @@ FROM alpine:latest
 
 ENV LANG C.UTF-8
 
-
+RUN \
+    apk add musl-dev gcc g++ && \
+    apk add python3 python3-dev && \
+    pip3 install -U pip
+    
 RUN set -ex \
         && apk add --no-cache --virtual .run-deps \
                 ffmpeg \
@@ -16,8 +20,7 @@ RUN set -ex \
                 py3-requests \
                 gcc
 
-RUN  pip3 install --upgrade pip \
-     && pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave
+RUN  pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave
 
 RUN  pip3 install --upgrade git+https://github.com/blueset/ehforwarderbot.git \
         && pip3 install --upgrade git+https://github.com/blueset/efb-telegram-master.git \
