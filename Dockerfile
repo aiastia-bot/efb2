@@ -8,7 +8,7 @@ RUN set -ex \
         && apk add --no-cache --virtual .run-deps \
                 ffmpeg \
                 libmagic \
-                python3 \
+                python3.6 \
                 py3-numpy \
                 py3-pillow
                 
