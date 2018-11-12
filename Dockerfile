@@ -20,28 +20,24 @@ RUN apk add gcc \
             
 RUN apk add python3.6-gdbm \
             python3-pip \
-        libtiff5-dev \
-        libjpeg8-dev \
-        zlib1g-dev \
-        libfreetype6-dev \
-        liblcms2-dev \
-        libwebp-dev \
-        tcl8.5-dev \
-        tk8.5-dev 
-        git \
-        libmagic-dev \
-        ffmpeg \
-        gcc \
-        make \
-        autoconf \
-        automake \
-        libtool \
-        python-setuptools \
-        python-pip \
-        git \
-        screen  
+            libtiff5-dev \
+            libjpeg8-dev \
+            zlib1g-dev \
+            libfreetype6-dev \
+            liblcms2-dev \
+            libwebp-dev \
+            tcl8.5-dev \
+            tk8.5-dev 
+            git \
+            libmagic-dev \
+            autoconf \
+            automake \
+            libtool \
+            python-setuptools \
+            python-pip \
+            screen  
 RUN pip install --upgrade pip \
-    pip3 install pillow       
+    && pip3 install pillow       
                 
 
 RUN  pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave
