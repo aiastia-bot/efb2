@@ -27,7 +27,7 @@ RUN apk add python3.6-gdbm \
             liblcms2-dev \
             libwebp-dev \
             tcl8.5-dev \
-            tk8.5-dev 
+            tk8.5-dev \
             git \
             libmagic-dev \
             autoconf \
