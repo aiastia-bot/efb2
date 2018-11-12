@@ -16,7 +16,8 @@ RUN set -ex \
                 py3-requests \
                 gcc
 
-RUN  pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave
+RUN  pip3 install --upgrade pip \
+     && pip3 install ehforwarderbot efb-telegram-master efb-wechat-slave
 
 RUN  pip3 install --upgrade git+https://github.com/blueset/ehforwarderbot.git \
         && pip3 install --upgrade git+https://github.com/blueset/efb-telegram-master.git \
