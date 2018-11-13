@@ -15,7 +15,7 @@ RUN    apk add --update --no-cache ca-certificates  \
                 py3-yaml \
                 py3-requests \
                 gcc \
-                gcc+ \
+                g++ \
                 git
                
 
