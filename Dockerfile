@@ -20,6 +20,7 @@ RUN apk add --update --no-cache ca-certificates \
     openssl-dev \
     git \
     && pip3 install -U pip \
+    && pip3 install python-telegram-bot --upgrade \
     && pip3 install git+https://github.com/blueset/ehforwarderbot.git \
     && pip3 install git+https://github.com/blueset/efb-telegram-master.git \
     && pip3 install git+https://github.com/blueset/efb-wechat-slave.git \
