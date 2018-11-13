@@ -1,29 +1,30 @@
-FROM alpine:latest
+FROM alpine:edge
+
 
 ENV LANG C.UTF-8
 
-RUN apk add --update --no-cache ca-certificates \
-    && apk add --no-cache --virtual .run-deps \
-    musl-dev \
-    gcc \
-    g++ \   
-    python3 \
-    python3-dev\
-    py3-numpy \
-    py3-yaml \
-    py3-pillow \
-    py3-requests \
-    ffmpeg \
-    libmagic \
-    libwebp \
-    libffi-dev \
-    openssl-dev \
-    git \
-    && pip3 install -U pip \
-    && pip3 install python-telegram-bot --upgrade \
-    && pip3 install git+https://github.com/blueset/ehforwarderbot.git \
-    && pip3 install git+https://github.com/blueset/efb-telegram-master.git \
-    && pip3 install git+https://github.com/blueset/efb-wechat-slave.git \
-    && pip3 install --upgrade git+https://github.com/littlecodersh/ItChat.git
+RUN    apk add --update --no-cache ca-certificates  \
+        && apk add --no-cache --virtual .run-deps \
+                ffmpeg \
+                libmagic \
+                python3 \
+                py3-numpy \
+                py3-pillow \
+                libwebp \
+                git \
+                py3-yaml \
+                py3-requests \
+                gcc 
+               
+
+RUN set -ex \
+        && pip3 install --upgrade pip \
+        && pip3 install ehforwarderbot \
+        && pip3 install efb-telegram-master \
+        && pip3 install efb-wechat-slave \
+        && pip3 install git+https://github.com/blueset/ehforwarderbot.git \
+        && pip3 install --upgrade pip \
+        && pip3 install pyqrcode \
+        && pip3 install --upgrade git+https://github.com/littlecodersh/ItChat.git
 
 CMD ["ehforwarderbot"]
