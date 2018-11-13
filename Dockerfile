@@ -22,6 +22,7 @@ RUN set -ex \
     screen\
     libffi-dev \
     openssl-dev \
+    git \
     && pip3 install -U pip
  
                 
