@@ -7,8 +7,8 @@ RUN apk add --update --no-cache ca-certificates
 RUN set -ex \
         && apk add --no-cache --virtual .run-deps \
     musl-dev \
-    gcc 
-    g++    
+    gcc \
+    g++ \   
     python3 \
     python3-dev\
     py3-numpy \
