@@ -8,6 +8,7 @@ RUN    apk add --update --no-cache ca-certificates  \
                 ffmpeg \
                 libmagic \
                 python3 \
+                python3-dev \
                 py3-numpy \
                 py3-pillow \
                 libwebp \
