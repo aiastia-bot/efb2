@@ -16,8 +16,6 @@ RUN apk add --update --no-cache ca-certificates \
     ffmpeg \
     libmagic \
     libwebp \
-    vim \
-    screen\
     libffi-dev \
     openssl-dev \
     git \
