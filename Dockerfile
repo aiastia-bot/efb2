@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-
+#2019*3.6
 ENV LANG C.UTF-8
 
 RUN    apk add --update --no-cache ca-certificates  \
