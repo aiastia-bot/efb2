@@ -1,5 +1,5 @@
 FROM alpine:latest
-#2019.2.8
+#2019.5-2
 
 ENV LANG C.UTF-8
 
