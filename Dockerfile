@@ -19,6 +19,7 @@ RUN apk add --update --no-cache ca-certificates \
     libwebp \
     libffi-dev \
     openssl-dev \
+    pip  \
     git 
     
 RUN pip3 install -U pip \
