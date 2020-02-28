@@ -1,5 +1,5 @@
 FROM alpine:latest
-#2019.5-2
+#2020-02-28
 
 ENV LANG C.UTF-8
 
@@ -26,11 +26,6 @@ RUN pip3 install -U pip \
     && pip3 install efb-wechat-slave \
     && pip3 install ehforwarderbot \
     && pip3 install python-telegram-bot \
-    #&& pip3 install git+https://github.com/blueset/ehforwarderbot.git \
-    #&& pip3 install git+https://github.com/blueset/efb-telegram-master.git \
-    #&& pip3 install git+https://github.com/blueset/efb-wechat-slave.git \
-    # && pip3 install python-telegram-bot --upgrade \
-    && pip3 install python-telegram-bot==10.0.0 \
     && pip3 install --upgrade git+https://github.com/littlecodersh/ItChat.git
 
 CMD ["ehforwarderbot"]
