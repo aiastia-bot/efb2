@@ -22,6 +22,7 @@ RUN apk add --update --no-cache ca-certificates \
     git 
     
 RUN pip3 install -U pip \
+    && pip install --ignore-installed PyYAML
     && pip3 install efb-telegram-master \
     && pip3 install efb-wechat-slave \
     && pip3 install ehforwarderbot \
