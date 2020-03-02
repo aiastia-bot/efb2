@@ -8,7 +8,7 @@ RUN apt-get update \
     && apt-get install python3 python3-dev libffi-dev libssl-dev ffmpeg musl-dev gcc  g+ libmagic libweb libffi-dev openssl-dev git 
 
 RUN pip3 install -U pip \
-    && pip install --ignore-installed PyYAML
+    && pip install --ignore-installed PyYAML  \
     && pip3 install efb-telegram-master \
     && pip3 install efb-wechat-slave \
     && pip3 install ehforwarderbot \
