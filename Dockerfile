@@ -3,11 +3,12 @@ FROM ubuntu:latest
 
 ENV LANG C.UTF-8
 
-RUN 
-    export PYTHONIOENCODING=utf-8 
-    sudo apt-get install python3 python3-dev libffi-dev libssl-dev ffmpeg 
+RUN sudo apt-get update 
 
-    
+    && sudo apt-get upgrad
+
+    && apt-get install python3 python3-dev libffi-dev libssl-dev ffmpeg musl-dev gcc  g++ py3-numpy py3-yaml py3-pillow py3-requests libmagic libweb libffi-dev openssl-dev git 
+
 RUN pip3 install -U pip \
     && pip install --ignore-installed PyYAML
     && pip3 install efb-telegram-master \
