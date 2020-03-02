@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 
 RUN apt-get update \
     && apt-get upgrade \
-    && apt-get install python3 python3-dev libffi-dev libssl-dev ffmpeg musl-dev git 
+    && apt-get install python3 python3-dev libffi-dev libssl-dev ffmpeg musl-dev git -y
 
 RUN pip3 install -U pip \
     && pip install --ignore-installed PyYAML  \
