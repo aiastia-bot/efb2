@@ -3,8 +3,8 @@ FROM ubuntu:latest
 
 ENV LANG C.UTF-8
 
-RUN apt-get update
-    && apt-get upgrade
+RUN apt-get update \
+    && apt-get upgrade \
     && apt-get install python3 python3-dev libffi-dev libssl-dev ffmpeg musl-dev gcc  g+ libmagic libweb libffi-dev openssl-dev git 
 
 RUN pip3 install -U pip \
