@@ -11,6 +11,8 @@ RUN    apk add --update --no-cache ca-certificates  \
                 python3-dev \
                 py3-numpy \
                 py3-pillow \
+                python3-dev \
+                python3-pip \
                 libwebp \
                 libffi-dev \
                 openssl-dev \
@@ -19,7 +21,6 @@ RUN    apk add --update --no-cache ca-certificates  \
                 py3-requests \
                 gcc \
                 g++ \
-                pip3 \
                 git
                
 
