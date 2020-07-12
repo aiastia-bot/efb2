@@ -19,6 +19,7 @@ RUN    apk add --update --no-cache ca-certificates  \
                 py3-requests \
                 gcc \
                 g++ \
+                pip3 \
                 git
                
 
