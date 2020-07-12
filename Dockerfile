@@ -2,10 +2,44 @@ FROM alpine:edge
 
 #2019*5.2
 ENV LANG C.UTF-8
-
-RUN    apk add --update --no-cache ca-certificates  \
-        && apk add --no-cache python3 python3-dev python3-pip libffi-dev libssl-dev ffmpeg musl-dev git \
-        && pip3 install -U pip
+RUN set -ex \
+        && apk update && apk upgrade \
+        && apk add --no-cache udns \
+        && apk add --no-cache --virtual .run-deps \
+                ca-certificates \
+                ffmpeg \
+                libmagic \
+                tiff \
+                libwebp \
+                freetype \
+                lcms2 \
+                openjpeg \
+                py3-olefile \
+                openblas \
+                py3-numpy \
+                py3-pillow \
+                py3-requests \
+                python3-dev \
+                py3-pip \
+                py3-cryptography \
+                py3-decorator \
+                git \
+                jpeg-dev \
+                zlib-dev \
+                tzdata \
+                iproute2 \
+                cairo-dev \
+                cairo \
+                cairo-tools \
+                jpeg-dev \
+                freetype-dev \
+                lcms2-dev \
+                openjpeg-dev \
+                tiff-dev \
+                tk-dev \
+                tcl-dev \
+        && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+        && echo "Asia/Shanghai" > /etc/timezone
 
 RUN set -ex \
         && pip3 install --upgrade pip \
