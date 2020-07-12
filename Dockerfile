@@ -32,7 +32,7 @@ RUN set -ex \
         && pip3 install efb-telegram-master \
         && pip3 install efb-wechat-slave \
         && pip3 install ehforwarderbot \
-        && pip3 install python-telegram-bot==11.1.0 \
+        && pip3 install python-telegram-bot \
         && pip3 install --upgrade git+https://github.com/littlecodersh/ItChat.git
 
 CMD ["ehforwarderbot"]
