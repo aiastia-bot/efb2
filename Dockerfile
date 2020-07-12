@@ -17,8 +17,6 @@ RUN    apk add --update --no-cache ca-certificates  \
                 libffi-dev \
                 openssl-dev \
                 git \
-                py3-yaml \
-                py3-requests \
                 gcc \
                 g++ \
                 git
