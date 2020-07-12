@@ -4,22 +4,7 @@ FROM alpine:edge
 ENV LANG C.UTF-8
 
 RUN    apk add --update --no-cache ca-certificates  \
-        && apk add --no-cache --virtual .run-deps \
-                ffmpeg \
-                libmagic \
-                python3 \
-                python3-dev \
-                py3-numpy \
-                py3-pillow \
-                python3-dev \
-                libwebp \
-                libffi-dev \
-                openssl-dev \
-                git \
-                gcc \
-                g++ \
-                git
-               
+        &&apk add --no-cache python3 python3-dev python3-pip libffi-dev libssl-dev ffmpeg musl-dev git
 
 RUN set -ex \
         && pip install --upgrade pip \
