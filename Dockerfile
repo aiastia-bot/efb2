@@ -22,16 +22,16 @@ RUN    apk add --update --no-cache ca-certificates  \
                
 
 RUN set -ex \
-        && pip3 install --upgrade pip \
-        && pip3 install pyqrcode \
-        #&& pip3 install efb-telegram-master==2.0.0b18 \
-        #&& pip3 install efb-wechat-slave==2.0.0a17 \
-        #&& pip3 install ehforwarderbot==2.0.0b14 \
-        #&& pip3 install python-telegram-bot==11.1.0 \
-        && pip3 install efb-telegram-master \
-        && pip3 install efb-wechat-slave \
-        && pip3 install ehforwarderbot \
-        && pip3 install python-telegram-bot \
-        && pip3 install --upgrade git+https://github.com/littlecodersh/ItChat.git
+        && pip install --upgrade pip \
+        && pip install pyqrcode \
+        #&& pip install efb-telegram-master==2.0.0b18 \
+        #&& pip install efb-wechat-slave==2.0.0a17 \
+        #&& pip install ehforwarderbot==2.0.0b14 \
+        #&& pip install python-telegram-bot==11.1.0 \
+        && pip install efb-telegram-master \
+        && pip install efb-wechat-slave \
+        && pip install ehforwarderbot \
+        && pip install python-telegram-bot \
+        && pip install --upgrade git+https://github.com/littlecodersh/ItChat.git
 
 CMD ["ehforwarderbot"]
