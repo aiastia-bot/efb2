@@ -12,7 +12,6 @@ RUN    apk add --update --no-cache ca-certificates  \
                 py3-numpy \
                 py3-pillow \
                 python3-dev \
-                python3-pip \
                 libwebp \
                 libffi-dev \
                 openssl-dev \
