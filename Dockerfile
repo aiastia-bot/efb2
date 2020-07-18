@@ -3,7 +3,8 @@ FROM ubuntu:latest
 
 ENV LANG C.UTF-8
 
-RUN apt-get update \
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && apt-get update \
     && apt-get upgrade \
     && apt-get install python3 python3-dev python3-pip libffi-dev libssl-dev ffmpeg musl-dev git -y
 
