@@ -6,7 +6,7 @@ ENV LANG C.UTF-8
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && apt-get update \
     && apt-get upgrade \
-    && apt-get -y install python3 python3-dev python3-pip libffi-dev libssl-dev ffmpeg musl-dev git
+    && apt-get install -y python3 python3-dev python3-pip libffi-dev libssl-dev ffmpeg musl-dev git
 
 RUN pip3 install -U pip \
     && pip install --ignore-installed PyYAML  \
