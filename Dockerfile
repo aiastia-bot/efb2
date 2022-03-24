@@ -20,6 +20,9 @@ RUN pip3 install -U pip \
     && pip3 install efb-telegram-master \
     && pip3 install efb-wechat-slave \
     && pip3 install ehforwarderbot \
-    && pip3 install python-telegram-bot
+    && pip3 install python-telegram-bot \
+    && pip3 install -U git+https://github.com/tedrolin/python-wechatPc \
+    && pip3 install -U git+https://github.com/tedrolin/efb-wechat-pc-slave
+
 
 CMD ["ehforwarderbot"]
