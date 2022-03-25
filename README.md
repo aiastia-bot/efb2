@@ -1,1 +1,1 @@
-# efb2
+-m 256M --memory-swap=256M  -v /home/1/default:/root/.ehforwarderbot/profiles/default --network=host --restart=always
