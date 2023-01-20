@@ -18,8 +18,9 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
 RUN pip3 install -U pip \
     && pip install --ignore-installed PyYAML  \
     && pip3 install efb-telegram-master \
-    && pip3 install efb-wechat-slave \
+    && pip3 install git+https://github.com/ehForwarderBot/efb-wechat-slave  \
     && pip3 install ehforwarderbot \
     && pip3 install python-telegram-bot
+
 
 CMD ["ehforwarderbot"]
