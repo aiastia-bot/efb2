@@ -12,7 +12,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && apt-get install -y libffi-dev \
     && apt-get install -y libssl-dev \
     && apt-get install -y musl-dev \
-    && apt-get install -y ffmpeg libcairo2-dev libcairo2 -y \
+    && apt-get install -y ffmpeg libcairo2-dev libcairo2 git \
     && apt-get install -y build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev 
     
 RUN pip3 install -U pip \
